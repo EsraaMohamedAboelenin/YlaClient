@@ -1,0 +1,287 @@
+<resources>
+
+    <string name="app_name">Yalla</string>
+    <string name="facebook_app_id">255029522100518 </string>
+    //
+    <string name="vv">753859021481657</string>
+    <string name="message">Message</string>
+    <!-- Login Activity -->
+    <string name="login_forget_pw_title">Forget your password ?!</string>
+    <string name="login_emailorphone_title">Your mail or phone plz ? </string>
+    <string name="login_pass_title">Your password </string>
+    <string name="nav_login">Login</string>
+
+    <!-- Register Activity -->
+    <string name="reg_activity_title">Registration</string>
+    <string name="reg_new_member_title">New Member Registration</string>
+    <string name="reg_Email">Email </string>
+    <string name="reg_Password">Password </string>
+    <string name="reg_Password_again">Confirm Password</string>
+    <string name="reg_Username">User name </string>
+    <string name="reg_btn_title">Continue</string>
+
+    <!-- Map Activity -->
+    <string name="map_search"> Going to </string>
+    <string name="map_address_text_view"> Your Address is  </string>
+    <string name="ride_later_title"> Ride Later</string>
+    <string name="ride_nw_title"> Ride Now </string>
+    <string name="cost">Cost  </string>
+    <string name="currentlocaion">Current location</string>
+    <string name="selectedlocation">Selected location</string>
+    <string name="map_selected_location_done">Done</string>
+
+    <string name="get_location_error">You must pick your location on map</string>
+
+    <string name="gps_Settings">GPS</string>
+    <string name="gps_Message">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="gps_Settings_yes">Gps setting</string>
+    <string name="gps_Setting_No">Cancel</string>
+
+    <string name="net_Settings">Network</string>
+    <string name="net_Message">Network is not enabled. Do you want to go to settings menu?</string>
+    <string name="net_Settings_yes">Network setting</string>
+
+    <string name="messageReply">Please Complete Empty Data</string>
+    <string name="forget_pw_email_valid">Please enter your email</string>
+    <string name="promo_code_message">Please enter promo code</string>
+    <string name="reset_password_code_title">Reset password code</string>
+    <string name="reset_password_done">Your password has been changed successfully! Thank you</string>
+    <string name="reg_code">Activation code </string>
+    <string name="reg_code_title">Please enter the activation code</string>
+    <string name="reg_resend_code_title">Have not received yet?! .. Resend code</string>
+    <string name="reg_send_btn">Send</string>
+    <string name="reg_mail">your email </string>
+    <string name="reg_gender">Gender</string>
+    <string name="reg_age">Your age </string>
+    <string name="reg_name_valid_title">Please enter your name</string>
+    <string name="reg_pw_valid_title">please enter your password</string>
+    <string name="reg_pw_less_than4_valid_title">Your password must be at least 4 characters</string>
+    <string name="reg_re_pw_valid_title">please enter your password again</string>
+    <string name="reg_pw_notMatch_repw_valid_title">Password does not match the confirm password</string>
+    <string name="reg_username_valid_title">Please enter username</string>
+    <string name="reg_email_valid_title">Please enter your email</string>
+    <string name="reg_email_wrong_valid_title">Invalid email address</string>
+    <string name="reg_country_valid_title">Please choose your country</string>
+    <string name="reg_region_valid_title">Please choose your region</string>
+    <string name="reg_phone_valid_title">Please enter your phone</string>
+    <string name="reg_phonecount_valid_title">Phone number must be </string>
+    <string name="reg_gender_valid_title">Please choose your gender</string>
+    <string name="reg_age_valid_title">Please enter your age</string>
+    <string name="reg_avatar_valid_title">Please pick your profile avatar</string>
+    <string name="reg_address_valid_title">Please enter your full address</string>
+    <string name="reg_location_valid_title">Please pick your location on map</string>
+    <string name="reg_iAgree_checked_valid">Please agree the terms before register</string>
+    <string name="reg_iAgree_title"> I Agree </string>
+    <string name="reg_gender_0">Male</string>
+    <string name="reg_gender_1">Female</string>
+
+    <string name="reg_countryList_empty">No countries found</string>
+    <string name="reg_country_RegionList_empty">No regions found</string>
+    <string name="reg_region_vaild_before_country">Please choose your country first</string>
+    <string name="reg_done">Registration done successfully</string>
+    <string name="reg_name">User Name</string>
+    <string name="reg_regWith_title">Or Register by </string>
+    <string name="reg_haveAcc_title">Have account ? Login now</string>
+    <string name="reg_country">Choose your country</string>
+    <string name="reg_country_code">Code</string>
+    <string name="reg_Phone">Enter your Phone number </string>
+    <string name="nav_reg">Register</string>
+    <string name="submit">Submit</string>
+    <string name="logged_out">Log Out</string>
+    <!-- Error connection -->
+    <string name="connection_error_msg">Lost connection!</string>
+    <string name="connection_error_tryAgain">Try again</string>
+    <string name="connection_error_back">Back</string>
+    <string name="connection_error_ok">Ok</string>
+
+    <string name="facebook_male">male</string>
+    <string name="facebook_female">female</string>
+
+    <string name="reg_failed_to_connect_facebook">Failed to connect to facebook server</string>
+
+    <!-- Profile -->
+    <string name="profile_cancel_btn">Cancel</string>
+
+    <!-- Errors -->
+    <string name="login_emailorphone_valid">Please enter your email</string>
+    <string name="login_pw_valid">Please enter your password</string>
+
+    <!-- Nav -->
+    <string name="nav_home_title">Home</string>
+    <string name="nav_current_title">Current Trip</string>
+    <string name="nav_scheduled_title">Scheduled</string>
+    <string name="my_trips">My trips</string>
+    <string name="nav_history_title">History</string>
+    <string name="nav_promo_title">Promotion</string>
+    <string name="nav_setting_title">Setting</string>
+    <string name="nav_places_title">Places To Go</string>
+    <string name="nav_interest_title">Music</string>
+    <string name="nav_help_title">Help</string>
+    <string name="nav_logout_title">LogOut</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <!-- Titles -->
+    <string name="dir">left</string>
+    <string name="home_title">TripType - PickUp </string>
+    <string name="egypt">Egypt</string>
+    <string name="sar"> Saudi Arabia</string>
+    <string name="schdul">No scheduled ride</string>
+    <string name="history">No ride taken in the past</string>
+    <string name="myride">My Rides</string>
+    <string name="going_to">Going to</string>
+    <string name="booking">Booking now</string>
+    <string name="title_activity_maps_activityk">Map</string>
+    <string name="th">th</string>
+    <string name="between">between</string>
+    <string name="search_hint">Please enter your place</string>
+
+    <!-- setting -->
+    <string name="mobile">mobile</string>
+    <string name="lang">Languge</string>
+    <string name="rate_app">Rate the App</string>
+    <string name="feedback">Feedback</string>
+    <string name="rates">Rates</string>
+    <string name="changepass">Change password</string>
+    <string name="signout">Sign out</string>
+
+    <!-- add details dialog -->
+    <string name="pickupdetails">Pick-up details</string>
+    <string name="hitdilaog">Add your pick-up location details for the Captain</string>
+    <string name="save">save</string>
+    <!-- booking now -->
+    <string name="adddetails">Add details</string>
+    <string name="add">Add</string>
+    <string name="cash">Cash</string>
+    <string name="estimatefair">EstimateFair</string>
+    <string name="estimatefairnote">the estimation not exactlly</string>
+
+    <string name="dropoff">Dropoff-Fare estimate</string>
+    <string name="promocode">Promo code</string>
+    <string name="yalla">yalla</string>
+    <string name="contactcapt">Contact captain</string>
+    <string name="share_trake">Share tracker</string>
+    <string name="expected_arrived_time">Expected arrival time :</string>
+    <!-- change_pass -->
+    <string name="currentpass">Current password</string>
+    <string name="newpass">new password</string>
+    <string name="confirmpass">confirm password</string>
+    <string name="later">LATER</string>
+    <string name="now">NOW</string>
+    <string name="starting">STARTING</string>
+    <string name="min">MINIMUM</string>
+    <string name="surch">Airport Surcharge</string>
+    <string name="movepkm">Moving-per km</string>
+    <string name="waitphour">Waiting-per hour*</string>
+
+    <!-- contac_driver_dialog-->
+    <string name="callcaptain">Call Captian</string>
+    <string name="sendemail">Send Sms</string>
+    <!-- help_dialog-->
+    <string name="contactus">Contact us!</string>
+    <string name="msgcontact">Thanks for reaching out.</string>
+    <string name="msgcontact2">Our team will be happy to support you.</string>
+    <string name="callus">Call us</string>
+    <string name="emailus">Email us</string>
+
+    <!-- PromoActivity // activity_promo-->
+    <string name="invite">invite friends</string>
+    <string name="promo_msg">Get your EGP 20 free credits!</string>
+    <string name="promo_msg2">Give a friend EGP 20 when they sign up, and get EGP 20 when they take the first ride</string>
+    <string name="promo_msg3">Your invitation code</string>
+    <string name="copy">Copy</string>
+
+    <!-- Wallet // activity_wallet-->
+    <string name="currentmethod">Current payment method</string>
+    <string name="addcredit">Add credit card</string>
+    <string name="topup_credit">Top up credit</string>
+    <string name="creditcard">Credit card</string>
+    <string name="redeemvoucher">Redeem Voucher</string>
+    <string name="topup_partner">Topup with partners</string>
+    <string name="skywards">Emirates Skywards</string>
+    <string name="earnrewards">Earn rewards with partners</string>
+    <string name="loyaltyprog">Loyalty Program</string>
+    <string name="credit">Credit</string>
+    <string name="creditfirsct">Use credit first</string>
+    <string name="wallet">Wallet</string>
+
+    <!--  // activity_add_credit-->
+    <string name="cardnum">Card Number</string>
+    <string name="cardnumplz">Enter your card number here</string>
+    <string name="Expiration">Expiration date</string>
+    <string name="yy_mm">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="cardname">Cardholder name</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="msgcredit">Your credit card will be charged EGP 1 for verfication purposes and will be  automatically refunded</string>
+    <string name="addcreditmsg2">All your information is safe and secured</string>
+    <string name="reqired">required</string>
+    <string name="country_credit">Country credit</string>
+    <!--  // activity_placese-->
+    <string name="resturant">resturant</string>
+    <string name="cafe">cafe</string>
+    <string name="library">library</string>
+    <string name="atm">ATM</string>
+    <string name="gym">gym</string>
+    <string name="hospital">hospital</string>
+    <string name="duration">Duration</string>
+    <string name="car_type">Car Type</string>
+    <string name="fare">Fare</string>
+    <string name="payment">Payment</string>
+    <string name="captain">Captain</string>
+    <string name="car">Car</string>
+    <string name="plate_num">Plate #</string>
+    <string name="distance">Distance</string>
+    <string name="wait_time">Wait time</string>
+
+    <!--  // why_trip_cancel_dialog-->
+    <string name="send">Send</string>
+    <string name="other">other</string>
+    <string name="mistake_booking">I booked by mistake</string>
+    <string name="found_new">I found an alternative transport</string>
+    <string name="chang_mind">I changed my mind</string>
+    <string name="edit_booking">I wanted to modify booking</string>
+    <string name="tripcanceled">Why do you want to cancel the trip?</string>
+    <string name="lastride">Your last ride</string>
+    <string name="msg">you should rate the captain</string>
+    <string name="tripnotcanceled">Trip is not canceled</string>
+    <string name="msg2">you should select reason for cancel trip</string>
+    <string name="sms">write sms</string>
+    <string name="nofilter">No filter</string>
+    <string name="km">km</string>
+    <string name="mint">mins</string>
+    <string name="notes">Notes</string>
+    <!--Chat-->
+    <string name="contactUs">Contact Us</string>
+    <string name="subject">Subject</string>
+    <string name="send_sms">Send message</string>
+    <string name="chat">Chat</string>
+    <string name="passwordReply">Password Must Be Over 5 Characters </string>
+    <string name="curentPasswordReply">Please enter The Correct Current Password</string>
+    <string name="pass_change">your password is changed</string>
+    <string name="msg_category">there is no car category availble  for this state</string>
+    <string name="msg_car">this car category is not avilable</string>
+    <string name="msgintrip">you are now in a trip ,you can book again after this trip finishing</string>
+
+
+    <string name="question">Are you sure yout want to logout?</string>
+    <string name="yes">Yes</string>
+
+    <string name="No">No </string>
+
+    <string name="edit_pass">New password and confirm password dont match</string>
+    <string name="message_send">Your notes sent</string>
+    <string name="edit_profile_txt">Edit Profile</string>
+    <string name="mobile_error">Please enter correct mobile number</string>
+    <string name="promo_code0">This code is not available</string>
+    <string name="promo_code1">Promo code added</string>
+    <string name="promo_code2">This code is used before</string>
+    <string name="error">Your Data doesnot updated please try again</string>
+    <string name="will_tell_driver">There is no drop off </string>
+    <string name="search_driver">Search about the nearest driver</string>
+    <string name="nav_issus_inbox">Issues Inbox</string>
+    <string name="noreplay">No replay for this issue</string>
+    <string name="issuesDetails">Issues Details</string>
+    <string name="choose_state">Choose your state</string>
+    <string name="finding_driver">Connecting you to the nearest driver</string>
+</resources>

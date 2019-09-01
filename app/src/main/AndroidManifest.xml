@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="solversteam.familycab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.IssuesDetailsActivity"></activity>
+        <activity android:name=".Activities.Issues_Activity" />
+        <activity android:name=".Activities.edit_profile" />
+        <activity android:name=".Activities.Contact_Us" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Base.BaseActivity" />
+        <activity
+            android:name=".Nav.Activities.CurrentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nav.Activities.ScheduledActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nav.Activities.My_Rides"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nav.Activities.PromoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nav.Activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nav.Activities.PlacesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Rate_Captain_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".Dialogs.Captain_arrive_notification"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent2" />
+        <activity
+            android:name=".Activities.Chat"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nav.Activities.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nav.Activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Rates"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Change_Pass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RideLater_Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RideNow_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.History_item_dtails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.GooglePlacesAutocompleteActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- <meta-data android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyDwwLPVmqc7PdZz8duueqUAoEJ1-7cXuEM" /> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCfcCkXi-6JYYDrIAyLHnuRdF9gwlE7Vq0" />
+
+        <service android:name=".Service.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".Service.FirebaseDataReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Nav.Activities.Wallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Add_credit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Scdule_item_details"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdtp_white"
+    tools:context="solversteam.familycab.Activities.IssuesDetailsActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/IssuesDetails_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding_default"
+        android:layout_below="@+id/IssuesDetails_toolbar"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <solversteam.familycab.Util.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:gravity="start"
+                    android:layout_gravity="left"
+                    android:background="@drawable/incoming_message"
+                    android:id="@+id/IssuesDetails_issueSubject_textview"
+                    android:textColor="@color/Black"
+
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:paddingBottom="@dimen/text_padding"
+
+
+                    android:textSize="@dimen/text_default"
+                    android:layout_height="wrap_content" />
+                <solversteam.familycab.Util.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:text=""
+
+                    android:layout_gravity="left"
+
+                    android:layout_marginTop="@dimen/text_margin20"
+                    android:gravity="start"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:paddingBottom="@dimen/text_padding"
+                    android:id="@+id/IssuesDetails_issueDetails_textview"
+
+                    android:background="@drawable/incoming_message"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/text_default"
+
+                    android:layout_height="wrap_content" />
+
+                <solversteam.familycab.Util.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/IssuesDetails_replySubject_textview"
+                    android:background="@drawable/outcoming_message"
+                    android:textColor="@color/Black"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:paddingBottom="@dimen/text_padding"
+                    android:layout_marginTop="@dimen/text_margin20"
+                    android:textSize="@dimen/text_default"
+                    android:gravity="start"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <solversteam.familycab.Util.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:text="a"
+                    android:id="@+id/IssuesDetails_replyMessage_textview"
+                    android:gravity="start"
+                    android:layout_gravity="right"
+
+                    android:visibility="gone"
+                    android:textColor="@color/Black"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:paddingBottom="@dimen/text_padding"
+                    android:layout_marginTop="@dimen/text_margin20"
+                    android:textSize="@dimen/text_default"
+                    android:background="@drawable/outcoming_message"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

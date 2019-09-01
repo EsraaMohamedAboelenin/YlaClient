@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="solversteam.familycab.Nav.Activities.My_Rides">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/text_margin15"
+        android:paddingLeft="@dimen/text_margin15"
+        android:paddingRight="@dimen/text_margin15"
+        android:paddingTop="@dimen/text_margin15"
+        android:id="@+id/container_of_no_items">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/familycap"
+            android:id="@+id/img"
+            android:alpha=".2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:text="@string/schdul"
+            android:gravity="center"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+
+            />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/history_recycle"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

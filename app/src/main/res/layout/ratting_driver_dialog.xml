@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@color/colorBgTransparent"
+    android:layout_margin="@dimen/text_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/bgLayoutBorderColor"
+        android:layout_marginTop="@dimen/text_margin15"
+        android:text="@string/lastride"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/text_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_xsmall"
+        android:textColor="@color/bgLayoutBorderColor"
+         android:text="friday, 12:10 AM"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/dialog_trip_date_text"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_default"
+        android:textColor="@color/bgLayoutBorderColor"
+        android:layout_marginTop="@dimen/text_margin15"
+        android:text="mohamed ahmed"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/dialog_captain_name"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/text_padding"
+        android:layout_above="@+id/rating_bar_captain"
+        android:layout_alignParentTop="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/imagmargin"
+
+            android:layout_marginBottom="@dimen/text_margin15"
+            android:orientation="vertical"
+            android:background="@drawable/bg_reg_login_layout_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/imagmargin"
+                android:text="200 Egp"
+                android:textSize="@dimen/text_title"
+                android:gravity="center"
+                android:textColor="@color/bgLayoutColor"
+                android:textStyle="bold"
+                android:id="@+id/dialog_trip_cost_text"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:text="paid by cash"
+                android:textSize="@dimen/text_small"
+                android:gravity="center"
+                android:textColor="@color/bgLayoutColor"
+                android:id="@+id/dialog_paymenttypae_text"
+                  />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin2"
+                android:gravity="bottom"
+                android:layout_gravity="bottom">
+                <fragment
+                    android:id="@+id/map"
+                    class ="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_centerHorizontal="true"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="@dimen/imagSize"
+                android:layout_height="@dimen/imagSize"
+                android:src="@drawable/prof_placeholder"
+                android:id="@+id/dialog_captain_image"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RatingBar
+        android:id="@+id/rating_bar_captain"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_margin30"
+        style="@style/foodRatingBar"
+         android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="false"
+         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/text_padding"
+        android:layout_above="@+id/submit_button"
+
+        />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="@string/submit"
+            android:textColor="@color/bgLayoutBorderColor"
+            android:textSize="@dimen/text_default"
+            android:layout_marginBottom="@dimen/padding_default"
+            />
+
+</RelativeLayout>
+</LinearLayout>

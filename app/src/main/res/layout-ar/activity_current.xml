@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_current"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+        <include
+            layout="@layout/layout"
+            android:id="@+id/map"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/colorBgTransparent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/text_padding"
+        android:orientation="horizontal"
+        android:background="@color/mdtp_white"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/captain_img"
+                    android:background="@drawable/circle"
+                    android:padding="2dp"
+                    android:src="@mipmap/cafe"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mohamed"
+                    android:gravity="right"
+                    android:id="@+id/captain_name"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/text_padding"
+                    android:layout_marginRight="@dimen/text_padding"
+                    android:textSize="@dimen/text_small"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:isIndicator="true"
+                    android:id="@+id/rating_captain_rating_bar"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="3.5"
+                    android:id="@+id/captain_rating_txt"
+                    android:textSize="@dimen/text_small"/>
+
+            </LinearLayout>
+            <!--<TextView-->
+            <!--android:layout_marginTop="@dimen/padding_3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="Red"-->
+            <!--android:id="@+id/car_color_txt"/>-->
+            <!---->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_margin2"
+        android:orientation="horizontal"
+        android:background="@color/mdtp_white"
+        android:layout_marginBottom="@dimen/text_margin2"
+         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_reg_login_layout_border"
+                android:padding="@dimen/padding_default"
+                android:id="@+id/platenumber"
+                android:text="Lm12524"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/text_margin2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/car_model"
+                android:layout_marginTop="@dimen/padding_default"
+                android:text="Audi , jfjf , jffjjj;;"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@mipmap/share"
+                android:padding="@dimen/text_default"
+                android:id="@+id/share_track"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+           >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/call_captain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:padding="@dimen/text_default"
+                android:src="@mipmap/call" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

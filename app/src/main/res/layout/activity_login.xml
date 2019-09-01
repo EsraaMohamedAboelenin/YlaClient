@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/root_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/padding_default"
+                android:layout_marginRight="@dimen/padding_default"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/text_padding">
+
+                <ImageView
+                    android:id="@+id/login_activity_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_default"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/padding_10"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/familycap" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <AutoCompleteTextView
+                        android:imeOptions="actionNext"
+                        android:id="@+id/login_email_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_default"
+                        android:background="@drawable/bg_reg_login_layout_border"
+                        android:gravity="start"
+                        android:hint="@string/login_emailorphone_title"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/text_padding"
+                        android:textColor="@color/textColorSec"
+                        android:textColorHint="@color/textColorPrimary"
+                        android:textSize="@dimen/text_default" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                       android:imeOptions="actionDone"
+                        android:id="@+id/login_password_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_default"
+                        android:background="@drawable/bg_reg_login_layout_border"
+                        android:gravity="start|center"
+                        android:hint="@string/login_pass_title"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/text_padding"
+
+                        android:textColor="@color/textColorSec"
+                        android:textColorHint="@color/textColorPrimary"
+                        android:textSize="@dimen/text_default"></EditText>
+
+
+                    <ImageView
+                        android:id="@+id/show_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="@dimen/text_padding"
+                        android:src="@drawable/showpass" />
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin15"
+                    android:background="@color/colorButtonSec"
+                    android:gravity="center"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/nav_login"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/text_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/login_forgetpw_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_default"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                    android:text="@string/login_forget_pw_title"
+                    android:textColor="@color/textColorSec"
+                    android:textSize="@dimen/text_default"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/reg_byFacebook_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_margin30"
+
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/facebook"
+
+
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/login_register_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin15"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                    android:text="@string/reg_new_member_title"
+                    android:textColor="@color/textColorSec"
+                    android:textSize="@dimen/text_default"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/colorBgTransparent"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

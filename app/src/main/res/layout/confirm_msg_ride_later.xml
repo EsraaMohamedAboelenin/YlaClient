@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Ride confirmed"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:layout_marginTop="@dimen/text_margin15"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/text_margin15"
+            android:background="@color/colorBgTransparent">
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your booking for Today"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_xsmall"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="between 11:15-11:30 PM has\n been confirmed."
+            android:textStyle="bold"
+            android:textSize="@dimen/text_xsmall"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/confirm_text"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/text_margin30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="you will be notified when the Captain is on the way. Please be ready when your captain arrives"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_xsmall"
+             />
+<Button
+    android:layout_marginTop="@dimen/text_margin30"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:text="OK"
+    android:id="@+id/ok_button"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:textSize="@dimen/text_title"/>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

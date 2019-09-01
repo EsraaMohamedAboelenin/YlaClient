@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginLeft="@dimen/text_margin20"
+    android:layout_marginRight="@dimen/text_margin20"
+    android:layout_marginTop="@dimen/text_margin30"
+    android:text="@string/pickupdetails"
+    android:textSize="@dimen/text_title"
+    android:textColor="#000"
+    android:layout_marginBottom="@dimen/text_margin30"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin20"
+        android:layout_marginRight="@dimen/text_margin20"
+        android:hint="@string/hitdilaog"
+        android:maxLines="3"
+        android:id="@+id/edit_add_dtails"
+        android:textSize="@dimen/text_default"
+        android:textColor="#000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin20"
+        android:layout_marginRight="@dimen/text_margin20"
+        android:layout_marginTop="@dimen/text_margin30"
+        android:layout_marginBottom="@dimen/text_margin30"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:gravity="right"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin20"
+            android:layout_marginRight="@dimen/text_margin20"
+            android:text="@string/profile_cancel_btn"
+            android:id="@+id/cancel"
+            android:textSize="@dimen/text_default"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin20"
+            android:layout_marginRight="@dimen/text_margin20"
+            android:text="@string/save"
+            android:id="@+id/save"
+            android:textSize="@dimen/text_default"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+</LinearLayout>

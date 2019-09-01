@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_booking"
+        android:layout_marginTop="@dimen/text_margin15"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/reason_edit_booking"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_default">13sp</dimen>
+    <dimen name="text_title">23sp</dimen>
+    <dimen name="text_small">15sp</dimen>
+    <dimen name="text_xsmall">13sp</dimen>
+    <dimen name="text_big">30sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_padding">13dp</dimen>
+    <dimen name="text_margin20">28dp</dimen>
+    <dimen name="text_margin30">37dp</dimen>
+    <dimen name="text_margin15">23dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="text_margin2">4dp</dimen>
+    <dimen name="imagSize">100dp</dimen>
+    <dimen name="imagmargin">50dp</dimen>
+    <dimen name="padding_2">3.5sp</dimen>
+</resources>

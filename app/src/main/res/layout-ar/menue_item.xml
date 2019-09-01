@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/nav_home_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:weightSum="7"
+        android:padding="@dimen/padding_default"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5.8"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_default"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home"
+            android:id="@+id/nav_home_img"
+            />
+
+        <!--android:gravity="center|right"-->
+        <TextView
+            android:id="@+id/nav_home_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_default"
+            android:gravity="center_vertical"
+            android:text="@string/nav_home_title"
+            android:textColor="@color/textColorSec"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+</LinearLayout>

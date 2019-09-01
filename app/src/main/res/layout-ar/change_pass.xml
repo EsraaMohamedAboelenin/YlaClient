@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/include"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/text_padding"
+        android:layout_marginLeft="@dimen/text_padding"
+        android:layout_marginRight="@dimen/text_padding"         >
+
+        <EditText
+            android:id="@+id/current_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/currentpass"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textSize="@dimen/text_default"
+            android:textCursorDrawable="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_default"
+
+        android:layout_marginLeft="@dimen/text_padding"
+        android:layout_marginRight="@dimen/text_padding"
+        >
+
+        <EditText
+            android:id="@+id/new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newpass"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="@dimen/text_default"
+            android:textCursorDrawable="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/padding_default"
+        >
+
+        <EditText
+            android:id="@+id/confirm_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirmpass"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:layout_marginLeft="@dimen/text_padding"
+            android:layout_marginRight="@dimen/text_padding"
+            android:textSize="@dimen/text_default"
+            android:textCursorDrawable="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/text_margin20"
+        android:layout_marginLeft="@dimen/text_margin15"
+        android:layout_marginRight="@dimen/text_margin15"
+        app:cardCornerRadius="@dimen/padding_default"
+        >
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title"
+            android:id="@+id/save_btn"
+
+            />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

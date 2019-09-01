@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgTransparent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:gravity="center_vertical"
+    android:background="@color/bgLayoutBorderColor">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/gym"
+        android:background="@drawable/circle"
+        android:padding="@dimen/padding_default"
+        android:layout_margin="@dimen/padding_default"
+
+        android:id="@+id/captainimage"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/padding_default"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="captain ha arrived"
+            android:textSize="@dimen/text_default"
+            android:padding="@dimen/padding_default"
+            android:id="@+id/message"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bgLayoutColor"
+            />
+        <TextView
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bgLayoutColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mohamed mahmoud"
+            android:textSize="@dimen/text_default"
+            android:padding="@dimen/padding_default"
+            android:id="@+id/captainname"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/text_margin30"
+        android:alpha=".6"
+        android:gravity="center_horizontal"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle2"
+            android:padding="@dimen/padding_default"
+            android:src="@drawable/close" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <fragment
+             android:id="@+id/map"
+            class ="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+        />
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+
+             android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/locationMarkertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:gravity="center"
+                android:minWidth="250dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text=" Set your Location "
+                android:textColor="@android:color/black"
+                android:visibility="invisible"/>
+
+            <ImageView
+
+                android:id="@+id/imageMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/flag"
+               android:layout_gravity="center" />
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+</LinearLayout>
